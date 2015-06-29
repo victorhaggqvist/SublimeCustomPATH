@@ -6,8 +6,8 @@ Inject custom path's in the Subilme Text's $PATH.
 {
     // if true, Sublimes system path will be overridden with the custom path
     "override": false,
-    // your custom path, on $PATH syntax aka. /path/one:/path/two
-    "PATH":"/opt/node_moduler/bin/"
+    // your custom path, on $PATH syntax aka. /path/one:/path/two:/path/n
+    "PATH":"/example/bin"
 }
 ```
 
