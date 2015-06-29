@@ -2,7 +2,7 @@
 Inject custom path's in the Subilme Text's $PATH.
 
 ## Settings
-```json
+```js
 {
     // if true, Sublimes system path will be overridden with the custom path
     "override": false,
