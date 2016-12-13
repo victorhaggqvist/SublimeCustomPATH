@@ -14,7 +14,11 @@ def plugin_loaded():
             if override:
                 os.environ['PATH'] = path
             else:
-                os.environ['PATH'] += os.pathsep+path
+                append_front = settings.get('append_front')
+                if append_front:
+                    os.environ['PATH'] = path + os.pathsep + os.environ['PATH']
+                else:
+                    os.environ['PATH'] += os.pathsep + path
             print('Path loaded: %s' % os.environ['PATH'])
         else:
             print('Path loaded: %s' % os.environ['PATH'])
