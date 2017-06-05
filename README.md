@@ -6,6 +6,8 @@ Inject custom path's in the Subilme Text's $PATH (or technicaly the plugin conta
 {
     // if true, Sublimes system path will be overridden with the custom path
     "override": false,
+    // if true, the path will be appended at the front
+    "append_front": false,
     // your custom path, on $PATH syntax aka. /path/one:/path/two:/path/n
     "PATH":"/example/bin"
 }
