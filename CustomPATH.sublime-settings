@@ -1,5 +1,6 @@
 {
     "override": false,
     "append_front": false,
-    "PATH":"/opt/node_moduler/bin/"
+    // Path to add
+    "PATH":""
 }

@@ -1,0 +1,15 @@
+version: 2.1
+jobs:
+  checks:
+    docker:
+      - image: cimg/base:2021.01
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run: docker build -t test-env -f .circleci/checks.Dockerfile .
+      - run:
+          command: docker run --rm poetry inv lint
+workflows:
+  main:
+    jobs:
+      - checks
