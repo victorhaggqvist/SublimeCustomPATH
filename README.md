@@ -1,5 +1,5 @@
 # CustomPATH
-Inject custom path's in the Subilme Text's $PATH (or technicaly the plugin containers' $PATH, but that is usualy good enought).
+Inject custom path's in the Subilme Text's $PATH (or technicaly the plugin containers' $PATH, but that is usualy good enough).
 
 ## Settings
 ```js
